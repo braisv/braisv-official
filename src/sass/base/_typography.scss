@@ -1,11 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500;600;700;800;900&display=swap");
+
+*,
+*::after,
+*::before {
+  font-family: "Darker Grotesque", sans-serif;
+}
+
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Darker Grotesque", sans-serif;
   font-weight: 400;
   line-height: 1.7;
   color: grey;
 }
 
 .heading-primary {
+  font-family: "Darker Grotesque", sans-serif;
   text-transform: uppercase;
   backface-visibility: hidden;
 
@@ -15,9 +24,7 @@ body {
     font-size: 6rem;
     font-weight: 400;
     letter-spacing: 1.5rem;
-    animation-name: moveInLeft;
-    animation-duration: 1s;
-    animation-timing-function: ease-out;
+    animation: 10s turbulenceLeft infinite ease-out;
   }
 
   &--sub {
@@ -25,7 +32,7 @@ body {
     font-size: 2rem;
     font-weight: 700;
     letter-spacing: 1.74rem;
-    animation: 1s moveInRight ease-out;
+    animation: 10s turbulenceRight infinite ease-out;
   }
 }
 
