@@ -11,6 +11,7 @@
 
 <script>
 import NavBar from "./components/NavBar";
+import '@/sass/main.scss'
 
 export default {
   name: "App",
