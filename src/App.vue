@@ -1,17 +1,14 @@
 <template>
-  <v-app>
-    <NavBar />
-    <v-content>
-      <v-container>
-        <router-view></router-view>
-      </v-container>
-    </v-content>
-  </v-app>
+    <div class="app" :class="[isDark ? 'dark' : 'light']">
+      <NavBar />
+      <router-view></router-view>
+    </div>
 </template>
 
 <script>
 import NavBar from "./components/NavBar";
-import '@/sass/main.scss'
+import { mapState } from "vuex";
+import '@/sass/main.scss';
 
 export default {
   name: "App",
@@ -21,7 +18,10 @@ export default {
   },
 
   data: () => ({
-    //
+    mode: "dark",
   }),
+  computed: {
+    ...mapState('darkMode', ["isDark"])
+  }
 };
 </script>

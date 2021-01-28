@@ -1,8 +1,4 @@
 @keyframes turbulenceLeft {
-  0% {
-    transform: translateX(-5rem);
-  }
-
   4% {
     transform: translateX(0.05rem);
   }
@@ -30,13 +26,13 @@
   10% {
     transform: translateX(0);
   }
+
+  100% {
+    transform: translateX(0);
+  }
 }
 
 @keyframes turbulenceRight {
-  0% {
-    transform: translateX(5rem);
-  }
-
   4% {
     transform: translateX(-0.05rem);
   }
@@ -62,6 +58,10 @@
   }
 
   10% {
+    transform: translateX(0);
+  }
+
+  100% {
     transform: translateX(0);
   }
 }

@@ -1,0 +1,25 @@
+.welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    
+    &__message {
+        padding: 5rem 2rem;
+
+        .text {
+            &--highlight {
+                margin-bottom: 10px;
+            }
+
+            &--regular {
+                margin-bottom: 5px;
+            }
+
+            &--link {
+                color: purple;
+            }
+        }
+    }
+}
